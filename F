@@ -1,0 +1,454 @@
+using Paint3;
+namespace Paint3
+{
+    partial class PaintApp
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaintApp));
+            this.myCanvas = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.OpenFileTool = new System.Windows.Forms.ToolStripButton();
+            this.saveFileTool = new System.Windows.Forms.ToolStripButton();
+            this.eraseTool = new System.Windows.Forms.ToolStripButton();
+            this.drawPencilTool = new System.Windows.Forms.ToolStripButton();
+            this.rotateAntiTool = new System.Windows.Forms.ToolStripButton();
+            this.rotateClockwiseTool = new System.Windows.Forms.ToolStripButton();
+            this.drawCircleTool = new System.Windows.Forms.ToolStripButton();
+            this.drawRectangleTool = new System.Windows.Forms.ToolStripButton();
+            this.drawSquareTool = new System.Windows.Forms.ToolStripButton();
+            this.changePenColorTool = new System.Windows.Forms.ToolStripButton();
+            this.zoomIn = new System.Windows.Forms.ToolStripButton();
+            this.zoomOut = new System.Windows.Forms.ToolStripButton();
+            this.colorPicker = new System.Windows.Forms.ToolStripButton();
+            this.undo = new System.Windows.Forms.ToolStripButton();
+            this.redo = new System.Windows.Forms.ToolStripButton();
+            this.cropImageTool = new System.Windows.Forms.ToolStripButton();
+            this.clearPicturebox = new System.Windows.Forms.ToolStripButton();
+            this.chngBgColor = new System.Windows.Forms.ToolStripButton();
+            this.drawLine = new System.Windows.Forms.ToolStripButton();
+            this.addTextTool = new System.Windows.Forms.ToolStripButton();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.myCanvas)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // myCanvas
+            // 
+            this.myCanvas.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.myCanvas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.myCanvas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.myCanvas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.myCanvas.Location = new System.Drawing.Point(3, 16);
+            this.myCanvas.MinimumSize = new System.Drawing.Size(800, 800);
+            this.myCanvas.Name = "myCanvas";
+            this.myCanvas.Size = new System.Drawing.Size(800, 800);
+            this.myCanvas.TabIndex = 0;
+            this.myCanvas.TabStop = false;
+            this.myCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.myCanvas_Paint);
+            this.myCanvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.myCanvas_MouseDown);
+            this.myCanvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.myCanvas_MouseMove);
+            this.myCanvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.myCanvas_MouseUp);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox);
+            this.groupBox1.Controls.Add(this.myCanvas);
+            this.groupBox1.Location = new System.Drawing.Point(12, 52);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(510, 510);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            // 
+            // textBox
+            // 
+            this.textBox.Location = new System.Drawing.Point(351, 126);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(100, 20);
+            this.textBox.TabIndex = 1;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.homeToolStripMenuItem,
+            this.viewToolStripMenuItem,
+            this.optionsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(534, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.homeToolStripMenuItem.Text = "Home";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OpenFileTool,
+            this.saveFileTool,
+            this.eraseTool,
+            this.drawPencilTool,
+            this.rotateAntiTool,
+            this.rotateClockwiseTool,
+            this.drawCircleTool,
+            this.drawRectangleTool,
+            this.drawSquareTool,
+            this.changePenColorTool,
+            this.zoomIn,
+            this.zoomOut,
+            this.colorPicker,
+            this.undo,
+            this.redo,
+            this.cropImageTool,
+            this.clearPicturebox,
+            this.chngBgColor,
+            this.drawLine,
+            this.addTextTool});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(534, 25);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // OpenFileTool
+            // 
+            this.OpenFileTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.OpenFileTool.Image = ((System.Drawing.Image)(resources.GetObject("OpenFileTool.Image")));
+            this.OpenFileTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.OpenFileTool.Name = "OpenFileTool";
+            this.OpenFileTool.Size = new System.Drawing.Size(23, 22);
+            this.OpenFileTool.Text = "Open File";
+            this.OpenFileTool.Click += new System.EventHandler(this.OpenFileTool_Click);
+            // 
+            // saveFileTool
+            // 
+            this.saveFileTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveFileTool.Image = ((System.Drawing.Image)(resources.GetObject("saveFileTool.Image")));
+            this.saveFileTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveFileTool.Name = "saveFileTool";
+            this.saveFileTool.Size = new System.Drawing.Size(23, 22);
+            this.saveFileTool.Text = "Save File";
+            this.saveFileTool.Click += new System.EventHandler(this.saveFileTool_Click);
+            // 
+            // eraseTool
+            // 
+            this.eraseTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.eraseTool.Image = ((System.Drawing.Image)(resources.GetObject("eraseTool.Image")));
+            this.eraseTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.eraseTool.Name = "eraseTool";
+            this.eraseTool.Size = new System.Drawing.Size(23, 22);
+            this.eraseTool.Text = "Erase";
+            this.eraseTool.Click += new System.EventHandler(this.eraseTool_Click);
+            // 
+            // drawPencilTool
+            // 
+            this.drawPencilTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.drawPencilTool.Image = ((System.Drawing.Image)(resources.GetObject("drawPencilTool.Image")));
+            this.drawPencilTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.drawPencilTool.Name = "drawPencilTool";
+            this.drawPencilTool.Size = new System.Drawing.Size(23, 22);
+            this.drawPencilTool.Text = "Pencil";
+            this.drawPencilTool.Click += new System.EventHandler(this.drawPencilTool_Click);
+            // 
+            // rotateAntiTool
+            // 
+            this.rotateAntiTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.rotateAntiTool.Image = ((System.Drawing.Image)(resources.GetObject("rotateAntiTool.Image")));
+            this.rotateAntiTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.rotateAntiTool.Name = "rotateAntiTool";
+            this.rotateAntiTool.Size = new System.Drawing.Size(23, 22);
+            this.rotateAntiTool.Text = "Rotate Anti Clockwise";
+            this.rotateAntiTool.Click += new System.EventHandler(this.rotateAntiTool_Click);
+            // 
+            // rotateClockwiseTool
+            // 
+            this.rotateClockwiseTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.rotateClockwiseTool.Image = ((System.Drawing.Image)(resources.GetObject("rotateClockwiseTool.Image")));
+            this.rotateClockwiseTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.rotateClockwiseTool.Name = "rotateClockwiseTool";
+            this.rotateClockwiseTool.Size = new System.Drawing.Size(23, 22);
+            this.rotateClockwiseTool.Text = "Rotate Clockwise";
+            this.rotateClockwiseTool.Click += new System.EventHandler(this.rotateClockwiseTool_Click);
+            // 
+            // drawCircleTool
+            // 
+            this.drawCircleTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.drawCircleTool.Image = ((System.Drawing.Image)(resources.GetObject("drawCircleTool.Image")));
+            this.drawCircleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.drawCircleTool.Name = "drawCircleTool";
+            this.drawCircleTool.Size = new System.Drawing.Size(23, 22);
+            this.drawCircleTool.Text = "Draw Circle";
+            this.drawCircleTool.Click += new System.EventHandler(this.drawCircleTool_Click);
+            // 
+            // drawRectangleTool
+            // 
+            this.drawRectangleTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.drawRectangleTool.Image = ((System.Drawing.Image)(resources.GetObject("drawRectangleTool.Image")));
+            this.drawRectangleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.drawRectangleTool.Name = "drawRectangleTool";
+            this.drawRectangleTool.Size = new System.Drawing.Size(23, 22);
+            this.drawRectangleTool.Text = "Draw Rectangle";
+            this.drawRectangleTool.Click += new System.EventHandler(this.drawRectangleTool_Click);
+            // 
+            // drawSquareTool
+            // 
+            this.drawSquareTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.drawSquareTool.Image = ((System.Drawing.Image)(resources.GetObject("drawSquareTool.Image")));
+            this.drawSquareTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.drawSquareTool.Name = "drawSquareTool";
+            this.drawSquareTool.Size = new System.Drawing.Size(23, 22);
+            this.drawSquareTool.Text = "Draw Square";
+            this.drawSquareTool.Click += new System.EventHandler(this.drawSquareTool_Click);
+            // 
+            // changePenColorTool
+            // 
+            this.changePenColorTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.changePenColorTool.Image = ((System.Drawing.Image)(resources.GetObject("changePenColorTool.Image")));
+            this.changePenColorTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.changePenColorTool.Name = "changePenColorTool";
+            this.changePenColorTool.Size = new System.Drawing.Size(23, 22);
+            this.changePenColorTool.Text = "Change Pen Color";
+            this.changePenColorTool.Click += new System.EventHandler(this.changePenColorTool_Click);
+            // 
+            // zoomIn
+            // 
+            this.zoomIn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.zoomIn.Image = ((System.Drawing.Image)(resources.GetObject("zoomIn.Image")));
+            this.zoomIn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.zoomIn.Name = "zoomIn";
+            this.zoomIn.Size = new System.Drawing.Size(23, 22);
+            this.zoomIn.Text = "Zoom In";
+            this.zoomIn.Click += new System.EventHandler(this.zoomIn_Click);
+            // 
+            // zoomOut
+            // 
+            this.zoomOut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.zoomOut.Image = ((System.Drawing.Image)(resources.GetObject("zoomOut.Image")));
+            this.zoomOut.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.zoomOut.Name = "zoomOut";
+            this.zoomOut.Size = new System.Drawing.Size(23, 22);
+            this.zoomOut.Text = "Zoom Out ";
+            this.zoomOut.Click += new System.EventHandler(this.zoomOut_Click);
+            // 
+            // colorPicker
+            // 
+            this.colorPicker.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.colorPicker.Image = ((System.Drawing.Image)(resources.GetObject("colorPicker.Image")));
+            this.colorPicker.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(23, 22);
+            this.colorPicker.Text = "Color Picker";
+            this.colorPicker.Click += new System.EventHandler(this.colorPicker_Click);
+            // 
+            // undo
+            // 
+            this.undo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.undo.Image = ((System.Drawing.Image)(resources.GetObject("undo.Image")));
+            this.undo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.undo.Name = "undo";
+            this.undo.Size = new System.Drawing.Size(23, 22);
+            this.undo.Text = "Undo Action";
+            this.undo.Click += new System.EventHandler(this.undo_Click);
+            // 
+            // redo
+            // 
+            this.redo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.redo.Image = ((System.Drawing.Image)(resources.GetObject("redo.Image")));
+            this.redo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.redo.Name = "redo";
+            this.redo.Size = new System.Drawing.Size(23, 22);
+            this.redo.Text = "Redo Action";
+            this.redo.Click += new System.EventHandler(this.redo_Click);
+            // 
+            // cropImageTool
+            // 
+            this.cropImageTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cropImageTool.Image = ((System.Drawing.Image)(resources.GetObject("cropImageTool.Image")));
+            this.cropImageTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cropImageTool.Name = "cropImageTool";
+            this.cropImageTool.Size = new System.Drawing.Size(23, 22);
+            this.cropImageTool.Text = "Crop Image";
+            this.cropImageTool.Click += new System.EventHandler(this.cropImageTool_Click);
+            // 
+            // clearPicturebox
+            // 
+            this.clearPicturebox.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.clearPicturebox.Image = ((System.Drawing.Image)(resources.GetObject("clearPicturebox.Image")));
+            this.clearPicturebox.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.clearPicturebox.Name = "clearPicturebox";
+            this.clearPicturebox.Size = new System.Drawing.Size(23, 22);
+            this.clearPicturebox.Text = "Clear Canvas";
+            this.clearPicturebox.Click += new System.EventHandler(this.clearPicturebox_Click);
+            // 
+            // chngBgColor
+            // 
+            this.chngBgColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.chngBgColor.Image = ((System.Drawing.Image)(resources.GetObject("chngBgColor.Image")));
+            this.chngBgColor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.chngBgColor.Name = "chngBgColor";
+            this.chngBgColor.Size = new System.Drawing.Size(23, 22);
+            this.chngBgColor.Text = "Change Background Color";
+            this.chngBgColor.Click += new System.EventHandler(this.chngBgColor_Click);
+            // 
+            // drawLine
+            // 
+            this.drawLine.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.drawLine.Image = ((System.Drawing.Image)(resources.GetObject("drawLine.Image")));
+            this.drawLine.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.drawLine.Name = "drawLine";
+            this.drawLine.Size = new System.Drawing.Size(23, 22);
+            this.drawLine.Text = "Draw Straight Line";
+            this.drawLine.Click += new System.EventHandler(this.drawLine_Click);
+            // 
+            // addTextTool
+            // 
+            this.addTextTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.addTextTool.Image = ((System.Drawing.Image)(resources.GetObject("addTextTool.Image")));
+            this.addTextTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.addTextTool.Name = "addTextTool";
+            this.addTextTool.Size = new System.Drawing.Size(23, 22);
+            this.addTextTool.Text = "Add Text";
+            this.addTextTool.Click += new System.EventHandler(this.addTextTool_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 579);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(534, 22);
+            this.statusStrip1.TabIndex = 4;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
+            // PaintApp
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(534, 601);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "PaintApp";
+            this.Text = "PaintApp";
+            ((System.ComponentModel.ISupportInitialize)(this.myCanvas)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox myCanvas;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton OpenFileTool;
+        private System.Windows.Forms.ToolStripButton saveFileTool;
+        private System.Windows.Forms.ToolStripButton eraseTool;
+        private System.Windows.Forms.ToolStripButton drawPencilTool;
+        private System.Windows.Forms.ToolStripButton rotateAntiTool;
+        private System.Windows.Forms.ToolStripButton rotateClockwiseTool;
+        private System.Windows.Forms.ToolStripButton drawCircleTool;
+        private System.Windows.Forms.ToolStripButton drawRectangleTool;
+        private System.Windows.Forms.ToolStripButton drawSquareTool;
+        private System.Windows.Forms.ToolStripButton changePenColorTool;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.ToolStripButton zoomIn;
+        private System.Windows.Forms.ToolStripButton zoomOut;
+        private System.Windows.Forms.ToolStripButton colorPicker;
+        private System.Windows.Forms.ToolStripButton undo;
+        private System.Windows.Forms.ToolStripButton redo;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripButton cropImageTool;
+        private System.Windows.Forms.ToolStripButton clearPicturebox;
+        private System.Windows.Forms.ToolStripButton chngBgColor;
+        private System.Windows.Forms.ToolStripButton drawLine;
+        private System.Windows.Forms.ToolStripButton addTextTool;
+        private System.Windows.Forms.TextBox textBox;
+    }
+}
+
